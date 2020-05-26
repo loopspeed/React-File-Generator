@@ -1,65 +1,53 @@
-# react-file-generator README
+# React File Generator README
 
-This is the README for your extension "react-file-generator". After writing up a brief description, we recommend including the following sections.
+This is a VSCode extension to generate useful TypeScript React files. It will generate .tsx, .test.tsx, .stories.tsx and .module.css files for the specified relative file path and file name.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+There are two ways to generate your files:
 
-For example if there is an image subfolder under your extension project workspace:
+### Method 1
 
-\!\[feature X\]\(images/feature-x.png\)
+Mac: `cmd+shift+p`
+Windows: `ctrl+shift+p`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Type `Generate React TS files` and press `Enter` to select it.
+
+Enter the relative file path to the file you are currently in.
+
+For example if you wanted to create the files in the same directory then either don't type anything and press `enter` or type `./` and press `enter`.
+
+If you want to create your files in a folder called `foo` which is in the same folder that the file you are looking at is in then type `./foo` and press `enter`.
+
+You will then be prompted for the file name. If you want to create files for a component `Bar` then just type `Bar` and press `enter`.
+
+You will then have four files created at the directory you specified:
+
+`Bar.tsx`
+
+`Bar.test.tsx`
+
+`Bar.stories.tsx`
+
+`Bar.module.css`
+
+### Method 2
+
+The quicker way to do it is to type a relative path anywhere in the file you are looking at such as `./foo.Bar`.
+
+Then select the relative file path. And press:
+
+Mac: `cmd+shift+p`
+Windows: `ctrl+shift+p`
+
+Type `Generate React TS files` and press `Enter` to select it.
+
+The files will have been generated for you.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+This extension requires VSCode version 1.45.0.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Incorrectly typed paths may not work as expected so double check your file paths if something isn't working.
