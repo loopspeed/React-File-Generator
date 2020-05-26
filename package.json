@@ -1,14 +1,25 @@
 {
 	"name": "react-file-generator",
-	"displayName": "React File Generator",
-	"description": "Generates all files needed for a component",
+	"displayName": "React TS File Generator",
+	"description": "Generates all TS files needed for a React component",
 	"version": "0.0.1",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#eeeeee",
+		"theme": "light"
+	},
+	"license": "",
+	"publisher": "Loopspeed",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/loopspeed/React-File-Generator.git"
+	},
 	"activationEvents": [
 		"onCommand:react-file-generator.generate"
 	],
@@ -42,7 +53,5 @@
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.3.0"
 	},
-	"dependencies": {
-		"node-mkdirfilep": "^0.0.2"
-	}
+	"dependencies": {}
 }
