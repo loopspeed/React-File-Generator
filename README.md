@@ -33,7 +33,7 @@ You will then have four files created at the directory you specified:
 
 ### Method 2
 
-The quicker way to do it is to type a relative path anywhere in the file you are looking at such as `./foo.Bar`.
+The quicker way to do it is to type a relative path anywhere in the file you are looking at such as `./foo/Bar`.
 
 Then select the relative file path. And press:
 
